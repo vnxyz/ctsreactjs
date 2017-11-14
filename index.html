@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Some title</title>
+</head>
+<body>
+ <h2 id="message">Hyderabad</h2>    
+ <button onclick="reverse()">Reverse</button>
+
+ <script>
+     var reverse = function(){
+         var content = document.getElementById('message').innerHTML
+         var revStr = content.split('').reverse().join('');
+         document.getElementById('message').innerHTML = revStr;
+
+     }
+ </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Some title</title>
+    </head>
+    <body>
+     <h2 id="message">Hyderabad</h2>    
+     <button onclick="reverse()">Reverse</button>
+    
+     <hr/>
+     
+     <div id="time"></div>
+
+     <script
+     src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script>
+
+
+        setInterval(function(){ 
+            var today = new Date();
+            console.log('something')
+            var p = "<h2>Current Time: </h2><p>"+ today.getHours() + " : " + today.getMinutes() + " : " + today.getSeconds() + "</p>"
+            $('#time').html(p)
+        }, 1000);
+         var reverse = function(){
+            //  var content = document.getElementById('message').innerHTML
+            var content = $('#message').html()
+             var revStr = content.split('').reverse().join('');
+             $('#message').html(revStr)
+    
+         }
+     </script>
+    </body>
+    </html>

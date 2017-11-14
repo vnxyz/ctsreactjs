@@ -1,0 +1,61 @@
+<html>
+        <head>
+            <title>Some title</title>
+        </head>
+        <body>
+         <h2 id="message">Hyderabad</h2>    
+         <button onclick="reverse()">Reverse</button>
+        
+         <hr/>
+         
+         <div id="time"></div>
+    
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+
+         <script>
+           'use strict';
+
+// 1. Create a class
+
+var Time = React.createClass({
+    displayName: 'Time',
+
+
+    render: function render() {
+
+        var today = new Date();
+        return React.createElement(
+            'div',
+            null,
+            React.createElement(
+                'h2',
+                null,
+                'Current time'
+            ),
+            React.createElement(
+                'p',
+                null,
+                today.getHours(),
+                ' : ',
+                today.getMinutes(),
+                '  : ',
+                today.getSeconds()
+            )
+        );
+    }
+});
+
+// 2. Create an object from class
+
+
+
+// 3. Mount the object to DOM
+
+setInterval(function () {
+    var timeObj = React.createElement(Time, {});
+    ReactDOM.render(timeObj, document.getElementById('time'));
+}, 1000);
+         </script>
+        </body>
+        </html>
