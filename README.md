@@ -20,4 +20,9 @@
 
         NodeJS
             -- https://www.youtube.com/watch?v=s9Zy8ISjxIw&t=39s
+            -- Server side programs
+            -- Client side development tools/packages (http-server, jquery, react....)
+            -- Commands
+                - create package.json : npm init
+                - install package : npm install --options
             
