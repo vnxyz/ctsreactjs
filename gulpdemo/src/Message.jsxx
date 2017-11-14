@@ -1,0 +1,13 @@
+var Message = React.createClass({
+    render: function(){
+        return (
+            <div>
+                <h2>{this.props.text}</h2>
+            </div>
+        )
+    }
+})
+
+// var obj = React.createElement(Message, {text: 'Changed message!!'})
+
+ReactDOM.render(<Message text="As a tag!!"/>, document.getElementById('mount-point'))
