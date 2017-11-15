@@ -8,8 +8,10 @@ var Badge = React.createClass({
     }
 })
 
-var obj = React.createElement(Badge, {caption: 'Sent', count: 23})
-var obj2 = React.createElement(Badge, {caption: 'Inbox', count: 44})
+module.exports = Badge;
 
-ReactDOM.render(obj, document.getElementById('mount-point'))
-ReactDOM.render(obj2, document.getElementById('mount-point2'))
+// var obj = React.createElement(Badge, {caption: 'Sent', count: 23})
+// var obj2 = React.createElement(Badge, {caption: 'Inbox', count: 44})
+
+// ReactDOM.render(obj, document.getElementById('mount-point'))
+// ReactDOM.render(obj2, document.getElementById('mount-point2'))
