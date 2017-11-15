@@ -11,7 +11,7 @@ class Thumbnail extends Component {
         <div className="caption">
           <h3>{this.props.title}</h3>
           <p>Some summary</p>
-          <p> <Badge caption="Votes" count="0"/></p>
+          <p> <Badge caption="Votes"/></p>
         </div>
       </div>
     </div>
