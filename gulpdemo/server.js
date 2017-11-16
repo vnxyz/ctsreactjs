@@ -35,6 +35,18 @@ app.post('/courses', function (req, res) {
     todos.push(todo);
     res.json(todos);
   })
+
+  app.post('/auth', function (req, res) {
+    var email = req.body.email;
+    var pwd = req.body.pwd;
+    console.log(email, pwd)
+    if(email === pwd){
+        res.json({auth: true})
+    }
+    else{
+        res.json({auth: false})
+    }
+  })
   app.get('/todo', function (req, res) {
     res.json(todos);
   })
